@@ -1,5 +1,5 @@
 
-name: My First Workflow
+name: Create my-workflow
 
 on: [push]
 
@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Hello from my new workflow!"
+      - name: Run a one-line script
+        run: echo "Hello, World!"
